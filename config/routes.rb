@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/tags", to: "tags#index"
+
+  get '/tags/:id', to: 'tags#show', as: :tag
 end
