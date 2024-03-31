@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Beaches",
+    "image": "https://content.codecademy.com/courses/learn-rails/img/beach01.jpg",
+    "created_at": "Sun, 31 Mar 2024 11:46:25.121204000 UTC +00:00",
+    "updated_at": "Sun, 31 Mar 2024 11:46:25.121204000 UTC +00:00"
+  },
+  {
+    "id": 2,
+    "title": "History",
+    "image": "https://content.codecademy.com/courses/learn-rails/img/history01.jpg",
+    "created_at": "Sun, 31 Mar 2024 11:46:25.175786000 UTC +00:00",
+    "updated_at": "Sun, 31 Mar 2024 11:46:25.175786000 UTC +00:00"
+  },
+  {
+    "id": 3,
+    "title": "Skiing",
+    "image": "https://content.codecademy.com/courses/learn-rails/img/skiing01.jpg",
+    "created_at": "Sun, 31 Mar 2024 11:46:25.205879000 UTC +00:00",
+    "updated_at": "Sun, 31 Mar 2024 11:46:25.205879000 UTC +00:00"
+  },
+  {
+    "id": 4,
+    "title": "Adventure",
+    "image": "https://content.codecademy.com/courses/learn-rails/img/adventure01.jpg",
+    "created_at": "Sun, 31 Mar 2024 11:46:25.235829000 UTC +00:00",
+    "updated_at": "Sun, 31 Mar 2024 11:46:25.235829000 UTC +00:00"
+  },
+  {
+    "id": 5,
+    "title": "Family",
+    "image": "https://content.codecademy.com/courses/learn-rails/img/family01.jpg",
+    "created_at": "Sun, 31 Mar 2024 11:46:25.264226000 UTC +00:00",
+    "updated_at": "Sun, 31 Mar 2024 11:46:25.264226000 UTC +00:00"
+  }
+]
