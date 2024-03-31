@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="container">
+    <img src="https://content.codecademy.com/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <h2>Add a new tag</h2>
+    <%= form_with(model: @tag, url: tags_path, method: :post) do |form| %>
+      <div class="field">
+        <%= form.label :title %>
+        <%= form.text_field :title %>
+      </div>
+      <div class="field">
+        <%= form.label :image %>
+        <%= form.text_field :image %>
+      </div>
+      <div class="actions">
+        <%= form.submit "Create Tag" %>
+      </div>
+    <% end %>
+  </div>
+</div>

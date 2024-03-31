@@ -10,13 +10,9 @@
     <h2 class="tag-title"><%= @tag.title %></h2>
 
     <div class="cards row">
-      <% @destinations.each do |destination| %>
-        <div class="card col-xs-4">
-          <%= image_tag destination.image %>
-          <h2><%= destination.name %></h2>
-          <p><%= destination.description %></p>
-        </div>
-      <% end %>
+      <div class="card col-xs-4">
+        <%= image_tag @tag.image %>
+      </div>
     </div>
 
   </div>
