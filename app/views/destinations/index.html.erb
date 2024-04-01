@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="container">
+    <img src="https://content.codecademy.com/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <div class="cards row">
+      <% @destinations.each do |destination| %>
+        <div class="card col-xs-4">
+          <h2><%= destination.name %></h2>
+          <img src="<%= destination.image %>" alt="<%= destination.name %>">
+          <p><%= destination.description %></p>
+          <p>Tag: <%= destination.tag.title %></p>
+          <%= link_to "Learn more", destination_path(destination) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

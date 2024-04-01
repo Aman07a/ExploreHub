@@ -9,7 +9,5 @@ Rails.application.routes.draw do
   resources :tags, only: [:index, :new, :create, :show]
 
   # Destinations
-  get "/destinations", to: "destinations#index"
-  get "/destinations/new", to: "destinations#new"
-  # post "/destinations", to: "destinations#create"
+  resources :destinations, only: [:index, :new, :create, :show]
 end

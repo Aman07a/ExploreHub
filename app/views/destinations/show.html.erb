@@ -10,7 +10,14 @@
     <div class="row">
       <div class="col-xs-12">
 
-        <!-- Your code here -->
+        <h2 class="destination-title"><%= @destination.name %> - <%= @destination.tag.title %></h2>
+
+        <div class="cards row">
+          <div class="card col-xs-4">
+            <p><%= image_tag @destination.image %></p>
+            <p><%= @destination.description %></p>
+          </div>
+        </div>
       
       </div>
     </div>
