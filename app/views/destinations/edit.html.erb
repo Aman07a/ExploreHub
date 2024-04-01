@@ -7,22 +7,27 @@
 
 <div class="destination">
   <div class="container">
-    <%= image_tag @destination.image, size: "200x500", class: "img-thumbnail" %>
-
-    <%= form_for @destination do |destination| %>
-      <div class="form-group">
-        <%= destination.label :name %>
-        <%= destination.text_field :name, class: "form-control" %>
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag @destination.image, size: "200x400", class: "img-thumbnail" %>
       </div>
-      <div class="form-group">
-        <%= destination.label :image %>
-        <%= destination.text_field :image, class: "form-control" %>
+      <div class="col-md-6">
+        <%= form_for @destination do |destination| %>
+          <div class="form-group">
+            <%= destination.label :name %>
+            <%= destination.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= destination.label :image %>
+            <%= destination.text_field :image, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= destination.label :description %>
+            <%= destination.text_field :description, class: "form-control" %>
+          </div>
+          <%= destination.submit "Update", class: "btn btn-primary" %>
+        <% end %>
       </div>
-      <div class="form-group">
-        <%= destination.label :description %>
-        <%= destination.text_field :description, class: "form-control" %>
-      </div>
-      <%= destination.submit "Update", class: "btn btn-primary" %>
-    <% end %>
+    </div>
   </div>
 </div>
