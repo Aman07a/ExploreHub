@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   resources :tags, only: [:index, :new, :create, :show]
 
   # Destinations
-  resources :destinations, only: [:index, :new, :create, :show]
+  resources :destinations, only: [:index, :new, :create, :show, :edit, :update, :destroy]
 end
